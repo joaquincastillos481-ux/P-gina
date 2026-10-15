@@ -1,0 +1,177 @@
+/* PÁGINA */
+:root {
+  --color-naranja: #E65F2B;       /* Principal / Llamadas a la acción */
+  --color-verde-azulado: #2A9D8F; /* Secundario / Banners / Recomendados */
+  --color-acento-suave: #F4A261;  /* Etiquetas / Detalles sutiles */
+  --color-oscuro-navbar: #1E2229; /* Primera Navbar (Fondo) */
+  --color-oscuro-menu: #242931;   /* Segunda Navbar (Fondo) */
+}
+
+
+body {
+  background-color: white;
+}
+
+/* NAVBAR | PARTE DE ARRIBA */
+#primera-navbar {
+  background-color: var(--color-oscuro-navbar);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#primera-navbar .navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+#segunda-navbar {
+  background-color: var(--color-oscuro-menu);
+  border-bottom: 3px solid var(--color-naranja);
+}
+
+
+/* CARRUSEL DE IMAGENES */
+
+#carouselExampleSlidesOnly {
+  margin-top: 110px;
+  width: 100%; 
+  height: 450px; 
+  object-fit: cover;
+  object-position: center;
+}
+
+/* CATEGORIAS - GÉNEROS */
+
+.generos {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.imagen-fija {
+  width: 350px; 
+  height: 350px; 
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.imagen-fija:hover {
+    background-color: #d1672a;
+    transform: translateY(10px);
+}
+
+
+
+
+
+
+/* LIBROS */
+
+/* --- Estilos Generales y Tipografía --- */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* --- Contenedor Principal (Distribución en Dos Columnas) --- */
+.seccion-libros {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* El bloque de la izquierda es 3 veces más ancho */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* --- Bloque Izquierdo: Los 100 más vendidos --- */
+.bloque-mas-vendidos h2 {
+  color: #e24925; /* Tono naranja para el título principal */
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+/* Recuadro con borde naranja sutil que encierra los libros */
+.contenedor-libros {
+  border: 1px solid #496fb0;
+  border-radius: 4px;
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* --- Tarjeta de cada Libro Individual --- */
+.tarjeta-libro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+}
+
+.imagen-portada {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.imagen-portada img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  /* Sombra suave para dar el efecto 3D del libro de la imagen */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* Etiqueta naranja de Ranking */
+.etiqueta-ranking {
+  background-color: #f25b31;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 2px;
+  align-self: flex-start;
+  margin-bottom: 8px;
+  text-transform: lowercase;
+}
+
+.titulo-libro {
+  font-size: 0.85rem;
+  margin: 0 0 5px 0;
+}
+
+.titulo-libro a {
+  color: #f25b31;
+  text-decoration: none;
+}
+
+.autor-libro {
+  color: #666666;
+  font-size: 0.8rem;
+  margin: 0 0 10px 0;
+}
+
+.precio-libro {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333333;
+  margin-top: auto; /* Empuja el precio al fondo si los títulos varían en largo */
+}
+
+
+/* FOOTER - PARTE DE ABAJO */
+footer a {
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #f25b31 !important; /* Cambia al tono naranja de tus libros al pasar el cursor */
+}

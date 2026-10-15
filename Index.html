@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libros</title>
+
+    <link
+      rel="stylesheet"
+      href="Biblioteca/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="fontawesome-free-7.3.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="Biblioteca/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="fixed-top">
+      
+      <!-- NAVBAR | PARTE DE ARRIBA-->
+      <nav class="navbar py-4" id="primera-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="Img/images.jpg"
+              alt="Logo"
+              width="30"
+              height="25"
+              class="d-inline-block align-text-top"
+            />
+            EntreLíneas
+          </a>
+        </div>
+      </nav>
+
+      <!-- NAVBAR | PARTE DE ABAJO-->
+      <nav class="navbar py-1 navbar-expand-lg" id="segunda-navbar">
+        <div class="container-fluid">
+          
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- CARRUSEL DE IMAGENES -->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4500">
+          <img src="Img/1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="4500">
+          <img src="Img/2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="4500">
+          <img src="Img/1.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+    </div>
+    <!-- CATEGORIAS - GÉNEROS -->
+    <section>
+      <h2 class="generos"><i class="fa-solid fa-book fa-jello"></i>GÉNEROS</h2>
+
+      <div class="row">
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+          <img src="Img/images.jpg" class="img-thumbnail imagen-fija" alt="..." />
+        </div>
+
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+          <img src="Img/images.jpg" class="img-thumbnail imagen-fija" alt="..." />
+        </div>
+
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+          <img src="Img/images.jpg" class="img-thumbnail imagen-fija" alt="..." />
+        </div>
+
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+          <img src="Img/images.jpg" class="img-thumbnail imagen-fija" alt="..." />
+        </div>
+
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+          <img src="Img/images.jpg" class="img-thumbnail imagen-fija" alt="..." />
+        </div>
+
+        <div class="col-md-4 text-center" data-aos="zoom-in">
+          <img src="Img/images.jpg" class="img-thumbnail imagen-fija" alt="..." />
+        </div>
+      </div>
+    </section>
+
+
+
+<section class="container my-5">
+  <div class="row g-4">
+    
+    <!-- BLOQUE IZQUIERDO -->
+    <div class="col-lg-9">
+    
+      <!-- Contenedor con borde personalizado -->
+      <div class="border border-danger-subtle rounded p-4 position-relative">
+        
+        <!-- COMPONENTE CARRUSEL DE BOOTSTRAP -->
+        <div id="carruselLibros" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <!-- DIAPOSITIVA 1 (Activa por defecto) -->
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                
+                <!-- Libro #18 -->
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="Mi niñera de la KGB">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#18 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">MI NIÑERA DE LA KGB</a></h3>
+                    <p class="text-muted small mb-2">RAMOS, LAURA ELISA</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 44.999,00</p>
+                  </article>
+                </div>
+                
+                <!-- Libro #19 -->
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="La paciente silenciosa">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#19 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">LA PACIENTE SILENCIOSA</a></h3>
+                    <p class="text-muted small mb-2">MICHAELIDES, ALEX</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 31.999,00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="La paciente silenciosa">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#19 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">LA PACIENTE SILENCIOSA</a></h3>
+                    <p class="text-muted small mb-2">MICHAELIDES, ALEX</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 31.999,00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="La paciente silenciosa">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#19 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">LA PACIENTE SILENCIOSA</a></h3>
+                    <p class="text-muted small mb-2">MICHAELIDES, ALEX</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 31.999,00</p>
+                  </article>
+                </div>
+                <!-- Aquí agregarías el Libro #20 y #21 para completar la primera tanda de 4 -->
+                
+              </div>
+            </div><!-- Fin Diapositiva 1 -->
+            
+            <!-- DIAPOSITIVA 2 (Siguientes libros) -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                
+                <!-- Libro #22 -->
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="Otro libro">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#22 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">TÍTULO DEL LIBRO 5</a></h3>
+                    <p class="text-muted small mb-2">AUTOR DEL LIBRO</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 35.000,00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="Otro libro">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#22 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">TÍTULO DEL LIBRO 5</a></h3>
+                    <p class="text-muted small mb-2">AUTOR DEL LIBRO</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 35.000,00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="Otro libro">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#22 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">TÍTULO DEL LIBRO 5</a></h3>
+                    <p class="text-muted small mb-2">AUTOR DEL LIBRO</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 35.000,00</p>
+                  </article>
+                </div>
+                <div class="col">
+                  <article class="d-flex flex-column h-100">
+                    <div class="text-center mb-3" style="height: 200px;">
+                      <img src="Img/images.jpg" class="img-fluid h-100 object-fit-contain shadow" alt="Otro libro">
+                    </div>
+                    <span class="badge text-white mb-2 align-self-start" style="background-color: #f25b31;">#22 ranking en venta</span>
+                    <h3 class="fs-6 mb-1"><a href="#" class="text-decoration-none" style="color: #f25b31;">TÍTULO DEL LIBRO 5</a></h3>
+                    <p class="text-muted small mb-2">AUTOR DEL LIBRO</p>
+                    <p class="fw-bold mt-auto mb-0">AR$ 35.000,00</p>
+                  </article>
+                </div>
+                
+                
+                <!-- (Agrega 3 libros más para completar esta segunda pantalla) -->
+                
+              </div>
+            </div><!-- Fin Diapositiva 2 -->
+            
+          </div>
+          
+          <!-- BOTONES DE NAVEGACIÓN (Flechas izquierda/derecha) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselLibros" data-bs-slide="prev" style="width: 5%; filter: invert(1);">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselLibros" data-bs-slide="next" style="width: 5%; filter: invert(1);">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <script src="Biblioteca/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="fontawesome-free-7.3.1-web/js/all.min.js"></script>
+    <script src="Biblioteca/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
