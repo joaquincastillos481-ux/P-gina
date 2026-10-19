@@ -1,177 +1,227 @@
-/* PÁGINA */
+/*ENTRE LÍNEAS - ESTILOS */
 :root {
-  --color-naranja: #E65F2B;       /* Principal / Llamadas a la acción */
-  --color-verde-azulado: #2A9D8F; /* Secundario / Banners / Recomendados */
-  --color-acento-suave: #F4A261;  /* Etiquetas / Detalles sutiles */
-  --color-oscuro-navbar: #1E2229; /* Primera Navbar (Fondo) */
-  --color-oscuro-menu: #242931;   /* Segunda Navbar (Fondo) */
+  --color-fondo: #FDFBF7;
+  --color-primario: #1A2530;   
+  --color-secundario: #2A3B4C;  
+  --color-terracota: #C85A32;   
+  --color-dorado: #D4A373;      
+  --color-tarjeta: #FFFFFF;
+  --fuente-titulos: 'Playfair Display', Georgia, serif;
+  --fuente-cuerpo: 'Inter', system-ui, sans-serif;
 }
 
-
-body {
-  background-color: white;
-}
-
-/* NAVBAR | PARTE DE ARRIBA */
-#primera-navbar {
-  background-color: var(--color-oscuro-navbar);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-#primera-navbar .navbar-brand {
-  color: #ffffff !important;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
-
-#segunda-navbar {
-  background-color: var(--color-oscuro-menu);
-  border-bottom: 3px solid var(--color-naranja);
-}
-
-
-/* CARRUSEL DE IMAGENES */
-
-#carouselExampleSlidesOnly {
-  margin-top: 110px;
-  width: 100%; 
-  height: 450px; 
-  object-fit: cover;
-  object-position: center;
-}
-
-/* CATEGORIAS - GÉNEROS */
-
-.generos {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.imagen-fija {
-  width: 350px; 
-  height: 350px; 
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.imagen-fija:hover {
-    background-color: #d1672a;
-    transform: translateY(10px);
-}
-
-
-
-
-
-
-/* LIBROS */
-
-/* --- Estilos Generales y Tipografía --- */
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #ffffff;
+body.bg-libreria {
+  background-color: var(--color-fondo);
+  font-family: var(--fuente-cuerpo);
   color: #333333;
-  margin: 0;
-  padding: 20px;
 }
 
-/* --- Contenedor Principal (Distribución en Dos Columnas) --- */
-.seccion-libros {
-  display: grid;
-  grid-template-columns: 3fr 1fr; /* El bloque de la izquierda es 3 veces más ancho */
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: start;
+.content-wrapper {
+  padding-top: 130px; /* Ajusta según el alto total de las 2 navbars */
+}
+.font-titulo, .titulo-seccion, .text-brand {
+  font-family: var(--fuente-titulos);
 }
 
-/* --- Bloque Izquierdo: Los 100 más vendidos --- */
-.bloque-mas-vendidos h2 {
-  color: #e24925; /* Tono naranja para el título principal */
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 15px;
+
+
+
+/* Encabezado y Navbars */
+header.fixed-top {
+  z-index: 1030;
 }
 
-/* Recuadro con borde naranja sutil que encierra los libros */
-.contenedor-libros {
-  border: 1px solid #496fb0;
-  border-radius: 4px;
-  padding: 25px;
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
+.primera-navbar {
+  background-color: var(--color-fondo);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* --- Tarjeta de cada Libro Individual --- */
-.tarjeta-libro {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  max-width: 180px;
+.text-brand {
+  color: var(--color-primario);
 }
 
-.imagen-portada {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 15px;
+.segunda-navbar {
+  background-color: var(--color-primario);
 }
 
-.imagen-portada img {
-  max-height: 100%;
-  max-width: 100%;
+.nav-custom-link {
+  color: #E2E8F0 !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-custom-link:hover, .nav-custom-link.active {
+  color: var(--color-dorado) !important;
+}
+
+
+
+/* Buscador y Botones */
+.buscador-custom {
+  border-color: #E2E8F0;
+  background-color: #FFFFFF;
+}
+
+.buscador-custom:focus {
+  border-color: var(--color-dorado);
+  box-shadow: 0 0 0 0.2rem rgba(212, 163, 115, 0.25);
+}
+
+.btn-busqueda {
+  background-color: var(--color-primario);
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-busqueda:hover {
+  background-color: var(--color-terracota);
+  color: #FFFFFF;
+}
+
+.nav-icon-link {
+  color: var(--color-primario);
+  transition: color 0.2s;
+}
+
+.nav-icon-link:hover {
+  color: var(--color-terracota);
+}
+
+.bg-terracota {
+  background-color: var(--color-terracota) !important;
+}
+
+
+
+/* Tarjetas de Géneros */
+.card-genero {
+  background-color: var(--color-tarjeta);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card-genero:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08) !important;
+}
+
+.imagen-genero {
+  height: 90px;
   object-fit: contain;
-  /* Sombra suave para dar el efecto 3D del libro de la imagen */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* Etiqueta naranja de Ranking */
-.etiqueta-ranking {
-  background-color: #f25b31;
-  color: #ffffff;
+
+
+
+/* carrusel de Libros */
+.card-seccion-libros {
+  background-color: var(--color-tarjeta);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.card-libro {
+  background-color: #FAFAFA;
+  border: 1px solid #EFEFEF !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+.carousel-item {
+  min-height: 400px;
+}
+
+.card-libro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08) !important;
+}
+
+.contenedor-portada {
+  height: 190px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.badge-ranking {
+  background-color: var(--color-terracota);
+  color: #FFFFFF;
+  font-weight: 500;
   font-size: 0.75rem;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 2px;
-  align-self: flex-start;
-  margin-bottom: 8px;
-  text-transform: lowercase;
 }
 
 .titulo-libro {
-  font-size: 0.85rem;
-  margin: 0 0 5px 0;
+  color: var(--color-primario);
+  transition: color 0.2s;
 }
 
-.titulo-libro a {
-  color: #f25b31;
-  text-decoration: none;
+.titulo-libro:hover {
+  color: var(--color-terracota);
 }
 
-.autor-libro {
-  color: #666666;
-  font-size: 0.8rem;
-  margin: 0 0 10px 0;
+.precio-texto {
+  color: var(--color-primario);
+  font-size: 1rem;
 }
 
-.precio-libro {
-  font-weight: bold;
-  font-size: 0.9rem;
-  color: #333333;
-  margin-top: auto; /* Empuja el precio al fondo si los títulos varían en largo */
+.btn-agregar-cart {
+  background-color: var(--color-primario);
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.btn-agregar-cart:hover {
+  background-color: var(--color-terracota);
+  color: #FFFFFF;
 }
 
 
-/* FOOTER - PARTE DE ABAJO */
-footer a {
-  transition: color 0.2s ease-in-out;
+/* Libro del dia */
+.badge-recomendacion {
+  background-color: var(--color-terracota);
 }
 
-footer a:hover {
-  color: #f25b31 !important; /* Cambia al tono naranja de tus libros al pasar el cursor */
+.btn-compra {
+background-color: var(--color-primario);
+color: #FFFFFF;
+}
+
+.btn-compra:hover {
+  background-color: var(--color-terracota);
+  color: #FFFFFF;
+}
+
+
+
+/* Controles de Carrusel de Libros */
+.flecha-carrusel {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primario);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.flecha-carrusel:hover {
+  background-color: var(--color-terracota);
+  opacity: 1;
+}
+
+
+
+
+/* Pie de Página */
+.footer-libreria {
+  background-color: #EDE8DF;
+  border-top: 1px solid rgba(0,0,0,0.05);
 }
