@@ -226,19 +226,26 @@ color: #FFFFFF;
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-/* Responisve */
+
+
 @media (max-width: 768px) {
   .content-wrapper {
     padding-top: 100px !important;
   }
-  
-  .carousel-item, 
-  .carousel-item img, 
-  .banner-img {
+
+  #carouselExampleSlidesOnly .carousel-item {
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  #carouselExampleSlidesOnly .carousel-item img.banner-img {
     width: 100% !important;
     height: auto !important;
-    min-height: 0 !important;
     max-height: none !important;
     object-fit: contain !important;
+  }
+
+  main > section:first-of-type {
+    margin-bottom: 1rem !important;
   }
 }
