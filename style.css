@@ -229,18 +229,16 @@ color: #FFFFFF;
 /* Responisve */
 @media (max-width: 768px) {
   .content-wrapper {
-    padding-top: 115px;
+    padding-top: 100px !important;
   }
-  .carousel-item {
-    min-height: auto !important;
-  }
+  
+  .carousel-item, 
+  .carousel-item img, 
   .banner-img {
+    width: 100% !important;
     height: auto !important;
+    min-height: 0 !important;
     max-height: none !important;
     object-fit: contain !important;
   }
-  .main section.mb-5 {
-    margin-bottom: 1rem !important;
-  }
-  
 }
