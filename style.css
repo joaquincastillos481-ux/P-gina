@@ -225,3 +225,13 @@ color: #FFFFFF;
   background-color: #EDE8DF;
   border-top: 1px solid rgba(0,0,0,0.05);
 }
+
+/* Responisve */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding-top: 100px;
+  }
+  .carousel-item {
+    min-height: auto !important;
+  }
+}
